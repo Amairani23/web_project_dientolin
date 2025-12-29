@@ -1,0 +1,36 @@
+.we {
+  margin-bottom: 100px;
+}
+
+.we__title {
+  font-size: 45px;
+  font-weight: bold;
+  color: #6b4b7c;
+  text-align: center;
+}
+
+.we__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.we__text {
+  font-size: 20px;
+  font-weight: normal;
+  align-self: center;
+}
+
+.we__image-profesionista {
+  grid-column: 2 / 4;
+  width: 100%;
+}
+
+.we__image-sala {
+  width: 100%;
+  grid-column: 1 / 3;
+}
+
+.we__recibidor {
+  width: 100%;
+}
