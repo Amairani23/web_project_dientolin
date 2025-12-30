@@ -1,11 +1,17 @@
 @font-face {
-  font-family: "Inter";
-  src: url("./fonts/Inter-Regular.woff2") format("woff2");
+  font-family: "MascotMVB";
+  src: url("./fonts/31b1e3667202ee14f4c7990bbd3343ef.woff") format("woff");
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "Inter";
-  src: url("./fonts/Inter-Black.woff2") format("woff2");
+  font-family: "Poppins";
+  src: url("./fonts/poppins-regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/poppins-semibold-webfont.woff2") format("woff2");
   font-weight: bold;
 }

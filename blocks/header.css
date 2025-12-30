@@ -13,6 +13,7 @@
   font-size: 16px;
   font-weight: normal;
   line-height: 1.5;
+  margin-top: 30px;
 }
 
 .nav__navegation {
@@ -21,11 +22,20 @@
   font-size: 20px;
   font-weight: normal;
   line-height: 1.5;
-  color: #6b4b7c;
 }
 
 .nav__dates {
-  margin-right: 20px;
+  margin-right: 40px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #6b4b7c;
+}
+
+.nav__link:hover {
+  border-bottom: 3px solid #bc0f9d;
+  color: #bc0f9d;
 }
 
 .header__content {
@@ -42,19 +52,21 @@
 }
 
 .header__title-span {
-  font-size: 45px;
+  font-size: 40px;
   font-weight: normal;
 }
 
 .header__subtitle {
   font-size: 20px;
   font-weight: normal;
+  line-height: 1.5;
   max-width: 70%;
 }
 
 .header__image {
   max-width: 50%;
   max-height: auto;
+  box-shadow: 4px 4px 10px #a0a0a0;
 }
 
 .header__btn-date {
@@ -67,6 +79,10 @@
   color: #fff;
 }
 
+.header__btn-date:hover {
+  background-image: linear-gradient(to right, #6b4b7c 0%, #bc0f9d 0%);
+}
+
 .header__btn-treatment {
   font-size: 16px;
   font-weight: normal;
@@ -77,6 +93,74 @@
   color: #fff;
 }
 
+.header__btn-treatment:hover {
+  background-image: linear-gradient(to right, #6b4b7c 0%, #bc0f9d 0%);
+}
+
 .header__image {
   border-radius: 0 300px 300px 0;
+}
+
+@media screen and (max-width: 890px) {
+  .header {
+    margin-bottom: 30px;
+  }
+  .header__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 50px;
+    text-align: center;
+  }
+
+  .header__title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #6b4b7c;
+  }
+
+  .header__title-span {
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  .header__subtitle {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    max-width: 90%;
+  }
+
+  .header__btn-date {
+    margin-bottom: 15px;
+  }
+
+  .header__image {
+    max-width: 800px;
+    max-height: 300px;
+    border-radius: 0;
+    order: -1;
+  }
+}
+
+@media screen and (max-width: 523px) {
+  .header {
+    margin-bottom: 50px;
+  }
+  .header__content {
+    margin: auto 0;
+  }
+
+  .header__subtitle {
+    max-width: 100%;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .header__image {
+    width: 100%;
+    border-radius: 0;
+    order: -1;
+  }
 }
